@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practise_package_2.MainClass">
+      <class name="sep_Java_Programs.OpenBrowserTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="callingMethod" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="openBrowser"/>
+          <include name="init"/>
+          <include name="navigateURL"/>
         </methods>
-      </class> <!-- practise_package_2.MainClass -->
+      </class> <!-- sep_Java_Programs.OpenBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Now going to close all browser after 5second]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20045" started-at="2019-08-26T06:54:31Z" finished-at="2019-08-26T06:54:51Z">
+  <suite name="Default suite" duration-ms="16479" started-at="2019-09-06T04:05:20Z" finished-at="2019-09-06T04:05:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20045" started-at="2019-08-26T06:54:31Z" finished-at="2019-08-26T06:54:51Z">
-      <class name="practise_package_2.MainClass">
-        <test-method status="PASS" signature="callingMethod(java.util.Hashtable)[pri:0, instance:practise_package_2.MainClass@3abada5a]" name="callingMethod" duration-ms="11981" started-at="2019-08-26T12:24:31Z" data-provider="getData" finished-at="2019-08-26T12:24:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{URL=https://www.zoho.eu/mail/login.html, userID=Manoj, Password=Password, Browser=chrome}]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="16479" started-at="2019-09-06T04:05:20Z" finished-at="2019-09-06T04:05:37Z">
+      <class name="sep_Java_Programs.OpenBrowserTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="init" is-config="true" duration-ms="8" started-at="2019-09-06T09:35:20Z" finished-at="2019-09-06T09:35:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- callingMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:practise_package_2.MainClass@3abada5a]" name="tearDown" is-config="true" duration-ms="8032" started-at="2019-08-26T12:24:43Z" finished-at="2019-08-26T12:24:51Z">
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="openBrowser" duration-ms="6305" started-at="2019-09-06T09:35:20Z" finished-at="2019-09-06T09:35:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- practise_package_2.MainClass -->
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="navigateURL()[pri:2, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="navigateURL" duration-ms="4344" started-at="2019-09-06T09:35:27Z" finished-at="2019-09-06T09:35:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateURL -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="quitBrowser" is-config="true" duration-ms="5804" started-at="2019-09-06T09:35:31Z" finished-at="2019-09-06T09:35:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Now going to close all browser after 5second]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- sep_Java_Programs.OpenBrowserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
