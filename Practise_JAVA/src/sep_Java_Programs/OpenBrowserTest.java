@@ -1,16 +1,19 @@
 package sep_Java_Programs;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 public class OpenBrowserTest extends Base_Class_sep {
 	
 	@Test(priority =1)
-	public void TestStart_Facebook(){
-       openBrowser();
+	public void TestStart_Facebook(){	   	
+       openBrowser("chrome");
 	}
 	
 	@Test(priority =2)
 	public void navigateURL(){
     	dr.navigate().to(pro.getProperty("appurl"));
+    	test.log(LogStatus.INFO, " URL is getting opened successfully... " + pro.getProperty("appurl"));
 	}
 
 	@Test(priority =3)

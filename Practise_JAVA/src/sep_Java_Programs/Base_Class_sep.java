@@ -11,16 +11,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class Base_Class_sep {
-	Properties pro;
-	Properties pr;
-	WebDriver dr;
+	public Properties pro;
+	public Properties pr;
+	public WebDriver dr;
+	public ExtentReports ext=ExtentReporting_sep.getReportingbyManoj();
+	public ExtentTest test;
 
 	public Base_Class_sep(){
 		init_config();
@@ -38,6 +44,7 @@ public class Base_Class_sep {
 
 	@BeforeClass
 	public void init(){
+		test = ext.startTest("Test Started and Extent Report ready to Generate...");
 		pro=new Properties();
 		try{
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\sep_Java_Programs\\OR.properties");
@@ -47,15 +54,23 @@ public class Base_Class_sep {
 		}
 	}
 	
-	public void openBrowser(){
-		System.setProperty("webdriver.chrome.driver", pro.getProperty("Chrome_Browser_exe"));
-		ChromeOptions op=new ChromeOptions();
-		op.addArguments("--start-maximized");
-		op.addArguments("--disable-notifications");
-		op.addArguments("--disable-infobars");
-		dr=new ChromeDriver();
-		dr.manage().window().maximize();
-	}
+	public void openBrowser(String broName){
+		if(broName.equalsIgnoreCase("chrome")){
+		   System.setProperty("webdriver.chrome.driver", pro.getProperty("Chrome_Browser_exe"));
+		   ChromeOptions op=new ChromeOptions();
+		   op.addArguments("--start-maximized");
+		   op.addArguments("--disable-notifications");
+		   op.addArguments("--disable-infobars");
+		   dr=new ChromeDriver();
+		   dr.manage().window().maximize();
+		   test.log(LogStatus.INFO, "Browser is getting opened successfully....");
+      }
+		else{
+			System.setProperty("webdriver.gecko.driver", pro.getProperty("Firefox_Browser_exe"));
+			dr=new FirefoxDriver();
+			dr.manage().window().maximize();
+		}
+ }
 	
 	public WebElement getEelemet(String loc){
 		WebElement w=null;
@@ -113,11 +128,12 @@ public class Base_Class_sep {
 		String FN=d.toString().replace(" ", "_").replace(":", "_")+".jpg";
 		File src = ((TakesScreenshot)dr).getScreenshotAs(OutputType.FILE);
 		try{
-			FileHandler.copy(src, new File(System.getProperty("user.dir")+"//report//"+FN));
+			FileHandler.copy(src, new File(System.getProperty("user.dir")+"//screenshot//"+FN));
 		}catch(Exception ex){
 			System.out.println(ex.getMessage());
 		}
 		Reporter.log("Screenshot taken successfully....",true);
+		test.log(LogStatus.INFO, "Take screenshot -- > " + test.addScreenCapture(System.getProperty("user.dir")+"//report//"+FN));
 	}
 	
 	public void wait(int sec){
@@ -131,7 +147,11 @@ public class Base_Class_sep {
 	
 	@AfterClass
 	public void quitBrowser(){
+		ext.endTest(test);
+		ext.flush();
 		quit_all_Browser_instance(5);
+		
+		test.log(LogStatus.INFO, "All browser instance closed "); 
 	}
 	
 	public void quit_all_Browser_instance(int sec){
