@@ -5,10 +5,9 @@
     <classes>
       <class name="sep_Java_Programs.OpenBrowserTest">
         <methods>
-          <include name="quitBrowser"/>
-          <include name="openBrowser"/>
           <include name="init"/>
-          <include name="navigateURL"/>
+          <include name="RegisterFacebook"/>
+          <include name="quitBrowser"/>
         </methods>
       </class> <!-- sep_Java_Programs.OpenBrowserTest -->
     </classes>

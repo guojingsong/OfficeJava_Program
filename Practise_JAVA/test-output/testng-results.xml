@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Now wait execution till 3second]]>
+    </line>
     <line>
       <![CDATA[Now going to close all browser after 5second]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16479" started-at="2019-09-06T04:05:20Z" finished-at="2019-09-06T04:05:37Z">
+  <suite name="Default suite" duration-ms="19113" started-at="2019-09-06T06:27:16Z" finished-at="2019-09-06T06:27:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16479" started-at="2019-09-06T04:05:20Z" finished-at="2019-09-06T04:05:37Z">
+    <test name="Default test" duration-ms="19113" started-at="2019-09-06T06:27:16Z" finished-at="2019-09-06T06:27:35Z">
       <class name="sep_Java_Programs.OpenBrowserTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="init" is-config="true" duration-ms="8" started-at="2019-09-06T09:35:20Z" finished-at="2019-09-06T09:35:20Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@1ddf84b8]" name="init" is-config="true" duration-ms="9" started-at="2019-09-06T11:57:16Z" finished-at="2019-09-06T11:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="openBrowser()[pri:1, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="openBrowser" duration-ms="6305" started-at="2019-09-06T09:35:20Z" finished-at="2019-09-06T09:35:27Z">
+        <test-method status="PASS" signature="TestStart_Facebook()[pri:1, instance:sep_Java_Programs.OpenBrowserTest@1ddf84b8]" name="TestStart_Facebook" duration-ms="4134" started-at="2019-09-06T11:57:16Z" finished-at="2019-09-06T11:57:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="navigateURL()[pri:2, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="navigateURL" duration-ms="4344" started-at="2019-09-06T09:35:27Z" finished-at="2019-09-06T09:35:31Z">
+        </test-method> <!-- TestStart_Facebook -->
+        <test-method status="PASS" signature="navigateURL()[pri:2, instance:sep_Java_Programs.OpenBrowserTest@1ddf84b8]" name="navigateURL" duration-ms="4651" started-at="2019-09-06T11:57:20Z" finished-at="2019-09-06T11:57:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateURL -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@c267ef4]" name="quitBrowser" is-config="true" duration-ms="5804" started-at="2019-09-06T09:35:31Z" finished-at="2019-09-06T09:35:37Z">
+        <test-method status="PASS" signature="RegisterFacebook()[pri:3, instance:sep_Java_Programs.OpenBrowserTest@1ddf84b8]" name="RegisterFacebook" duration-ms="4484" started-at="2019-09-06T11:57:25Z" finished-at="2019-09-06T11:57:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Now wait execution till 3second]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RegisterFacebook -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@1ddf84b8]" name="quitBrowser" is-config="true" duration-ms="5812" started-at="2019-09-06T11:57:29Z" finished-at="2019-09-06T11:57:35Z">
           <reporter-output>
             <line>
               <![CDATA[Now going to close all browser after 5second]]>
