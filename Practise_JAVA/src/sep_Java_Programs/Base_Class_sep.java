@@ -117,12 +117,13 @@ public class Base_Class_sep {
 		}catch(Exception ex){
 			System.out.println(ex.getMessage());
 		}
+		Reporter.log("Screenshot taken successfully....",true);
 	}
 	
 	public void wait(int sec){
 	try{
 		Thread.sleep(sec*1000);
-        Reporter.log("Now wait execution till " + sec + "second", true);
+        Reporter.log("Now wait execution till " + sec + " second", true);
 	}catch(Exception ex){
 		System.out.println(ex.getMessage());
 	}
@@ -136,7 +137,7 @@ public class Base_Class_sep {
 	public void quit_all_Browser_instance(int sec){
 	try{
 		Thread.sleep(sec*1000);
-        Reporter.log("Now going to close all browser after " + sec + "second", true);
+        Reporter.log("Now going to close all browser after " + sec + " second", true);
 		dr.quit();
 	}catch(Exception ex){
 		System.out.println(ex.getMessage());
