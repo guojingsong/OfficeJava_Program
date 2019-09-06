@@ -1,50 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[Now wait execution till 3 second]]>
-    </line>
-    <line>
-      <![CDATA[Radio_button_selected_Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Screenshot taken successfully....]]>
-    </line>
     <line>
       <![CDATA[Now going to close all browser after 5 second]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20710" started-at="2019-09-06T07:28:59Z" finished-at="2019-09-06T07:29:20Z">
+  <suite name="Default suite" duration-ms="5292" started-at="2019-09-06T08:43:58Z" finished-at="2019-09-06T08:44:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20710" started-at="2019-09-06T07:28:59Z" finished-at="2019-09-06T07:29:20Z">
+    <test name="Default test" duration-ms="5292" started-at="2019-09-06T08:43:58Z" finished-at="2019-09-06T08:44:03Z">
       <class name="sep_Java_Programs.OpenBrowserTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@52feb982]" name="init" is-config="true" duration-ms="9" started-at="2019-09-06T12:58:59Z" finished-at="2019-09-06T12:58:59Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@60015ef5]" name="init" is-config="true" duration-ms="17" started-at="2019-09-06T14:13:58Z" finished-at="2019-09-06T14:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="TestStart_Facebook()[pri:1, instance:sep_Java_Programs.OpenBrowserTest@52feb982]" name="TestStart_Facebook" duration-ms="4470" started-at="2019-09-06T12:58:59Z" finished-at="2019-09-06T12:59:04Z">
+        <test-method status="FAIL" signature="TestStart_Facebook()[pri:1, instance:sep_Java_Programs.OpenBrowserTest@60015ef5]" name="TestStart_Facebook" duration-ms="4" started-at="2019-09-06T14:13:58Z" finished-at="2019-09-06T14:13:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.util.Hashtable.put(Unknown Source)
+	at java.util.Properties.setProperty(Unknown Source)
+	at java.lang.System.setProperty(Unknown Source)
+	at sep_Java_Programs.Base_Class_sep.openBrowser(Base_Class_sep.java:60)
+	at sep_Java_Programs.OpenBrowserTest.TestStart_Facebook(OpenBrowserTest.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestStart_Facebook -->
-        <test-method status="PASS" signature="navigateURL()[pri:2, instance:sep_Java_Programs.OpenBrowserTest@52feb982]" name="navigateURL" duration-ms="5831" started-at="2019-09-06T12:59:04Z" finished-at="2019-09-06T12:59:10Z">
+        <test-method status="FAIL" signature="navigateURL()[pri:2, instance:sep_Java_Programs.OpenBrowserTest@60015ef5]" name="navigateURL" duration-ms="1" started-at="2019-09-06T14:13:58Z" finished-at="2019-09-06T14:13:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at sep_Java_Programs.OpenBrowserTest.navigateURL(OpenBrowserTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateURL -->
-        <test-method status="PASS" signature="RegisterFacebook()[pri:3, instance:sep_Java_Programs.OpenBrowserTest@52feb982]" name="RegisterFacebook" duration-ms="4292" started-at="2019-09-06T12:59:10Z" finished-at="2019-09-06T12:59:14Z">
+        <test-method status="FAIL" signature="RegisterFacebook()[pri:3, instance:sep_Java_Programs.OpenBrowserTest@60015ef5]" name="RegisterFacebook" duration-ms="6" started-at="2019-09-06T14:13:58Z" finished-at="2019-09-06T14:13:58Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot find elements when name text is null.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when name text is null.
+	at org.openqa.selenium.By$ByName.<init>(By.java:267)
+	at org.openqa.selenium.By.name(By.java:76)
+	at sep_Java_Programs.Base_Class_sep.getEelemet(Base_Class_sep.java:81)
+	at sep_Java_Programs.Base_Class_sep.inputType(Base_Class_sep.java:92)
+	at sep_Java_Programs.OpenBrowserTest.RegisterFacebook(OpenBrowserTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
-            <line>
-              <![CDATA[Now wait execution till 3 second]]>
-            </line>
-            <line>
-              <![CDATA[Radio_button_selected_Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Screenshot taken successfully....]]>
-            </line>
           </reporter-output>
         </test-method> <!-- RegisterFacebook -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@52feb982]" name="quitBrowser" is-config="true" duration-ms="6090" started-at="2019-09-06T12:59:14Z" finished-at="2019-09-06T12:59:20Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:sep_Java_Programs.OpenBrowserTest@60015ef5]" name="quitBrowser" is-config="true" duration-ms="5239" started-at="2019-09-06T14:13:58Z" finished-at="2019-09-06T14:14:03Z">
           <reporter-output>
             <line>
               <![CDATA[Now going to close all browser after 5 second]]>

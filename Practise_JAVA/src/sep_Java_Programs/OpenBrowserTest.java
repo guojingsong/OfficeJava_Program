@@ -28,5 +28,6 @@ public class OpenBrowserTest extends Base_Class_sep {
       	wait(3);
       	radioBTNSelection("gender_xpath");
       	screenshot();
+      	test.log(LogStatus.PASS, " Application test Passed...  ");
 	}
 }

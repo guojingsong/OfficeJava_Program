@@ -48,7 +48,7 @@ public class Base_Class_sep {
 		pro=new Properties();
 		try{
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\sep_Java_Programs\\OR.properties");
-		    pro.load(fis);
+			pro.load(fis);
 		}catch(Exception ex){
 			System.out.println(ex.getMessage());
 		}
@@ -70,7 +70,7 @@ public class Base_Class_sep {
 			dr=new FirefoxDriver();
 			dr.manage().window().maximize();
 		}
- }
+     }
 	
 	public WebElement getEelemet(String loc){
 		WebElement w=null;
@@ -133,7 +133,7 @@ public class Base_Class_sep {
 			System.out.println(ex.getMessage());
 		}
 		Reporter.log("Screenshot taken successfully....",true);
-		test.log(LogStatus.INFO, "Take screenshot -- > " + test.addScreenCapture(System.getProperty("user.dir")+"//report//"+FN));
+		test.log(LogStatus.INFO, "Take screenshot -- > " + test.addScreenCapture(System.getProperty("user.dir")+"//screenshot//"+FN));
 	}
 	
 	public void wait(int sec){

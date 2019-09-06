@@ -6,8 +6,10 @@
       <class name="sep_Java_Programs.OpenBrowserTest">
         <methods>
           <include name="init"/>
+          <include name="TestStart_Facebook"/>
           <include name="RegisterFacebook"/>
           <include name="quitBrowser"/>
+          <include name="navigateURL"/>
         </methods>
       </class> <!-- sep_Java_Programs.OpenBrowserTest -->
     </classes>
