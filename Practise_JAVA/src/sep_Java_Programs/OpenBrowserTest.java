@@ -6,17 +6,13 @@ import com.relevantcodes.extentreports.LogStatus;
 public class OpenBrowserTest extends Base_Class_sep {
 	
 	@Test(priority =1)
-	public void TestStart_Facebook(){	   	
-       openBrowser("chrome");
-	}
-	
-	@Test(priority =2)
-	public void navigateURL(){
+	public void TestStart_Facebook(){
+		openBrowser("chrome");
     	dr.navigate().to(pro.getProperty("appurl"));
     	test.log(LogStatus.INFO, " URL is getting opened successfully... " + pro.getProperty("appurl"));
 	}
 
-	@Test(priority =3)
+	@Test(priority =2)
 	public void RegisterFacebook(){
     	inputType("username_name", "FirstName");
     	inputType("userlast_name", "LastName");

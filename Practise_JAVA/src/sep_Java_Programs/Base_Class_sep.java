@@ -74,12 +74,18 @@ public class Base_Class_sep {
 	
 	public WebElement getEelemet(String loc){
 		WebElement w=null;
-        if(loc.endsWith("_id"))
+        if(loc.endsWith("_id")){
         	w=dr.findElement(By.id(pro.getProperty(loc)));
-        else if(loc.endsWith("_name"))
+            Reporter.log("Element found by id -- > ", true);
+        }
+        else if(loc.endsWith("_name")){
         	w=dr.findElement(By.name(pro.getProperty(loc)));
-        else if(loc.endsWith("_xpath"))
+            Reporter.log("Element found by name locater -- > ", true);
+        }
+        else if(loc.endsWith("_xpath")){
         	w=dr.findElement(By.xpath(pro.getProperty(loc)));
+            Reporter.log("Element found by xpath locator -- > ", true);
+        }
         else{
         	screenshot();
         	Reporter.log("Element Not found by driver", true);
@@ -88,7 +94,13 @@ public class Base_Class_sep {
 	}
 	
 	public void inputType(String locator,String data){
-		getEelemet(locator).sendKeys(pr.getProperty(data));
+		  getEelemet(locator).sendKeys(pr.getProperty(data));
+		  Reporter.log("Input type entered in text box",true);
+	}
+	
+	public void inputType(String locator){
+		  getEelemet(locator).click();
+		  Reporter.log("Input type entered in text box",true);
 	}
 	
 	public void clickBTN_Link(String locator){
@@ -133,6 +145,7 @@ public class Base_Class_sep {
 			System.out.println(ex.getMessage());
 		}
 		Reporter.log("Screenshot taken successfully....",true);
+		System.out.println("Screenshot taken successfully.... System.out.println ...." );
 		test.log(LogStatus.INFO, "Take screenshot -- > " + test.addScreenCapture(System.getProperty("user.dir")+"//screenshot//"+FN));
 	}
 	
@@ -149,9 +162,8 @@ public class Base_Class_sep {
 	public void quitBrowser(){
 		ext.endTest(test);
 		ext.flush();
+		test.log(LogStatus.INFO, "All browsers instance closed "); 
 		quit_all_Browser_instance(5);
-		
-		test.log(LogStatus.INFO, "All browser instance closed "); 
 	}
 	
 	public void quit_all_Browser_instance(int sec){

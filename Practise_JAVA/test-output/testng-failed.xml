@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sep_Java_Programs.OpenBrowserTest">
+      <class name="sep_Java_Programs.DoubleClick_Test">
         <methods>
           <include name="init"/>
-          <include name="TestStart_Facebook"/>
-          <include name="RegisterFacebook"/>
+          <include name="test"/>
           <include name="quitBrowser"/>
-          <include name="navigateURL"/>
         </methods>
-      </class> <!-- sep_Java_Programs.OpenBrowserTest -->
+      </class> <!-- sep_Java_Programs.DoubleClick_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
