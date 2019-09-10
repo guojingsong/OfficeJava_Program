@@ -72,6 +72,11 @@ public class Base_Class_sep {
 		}
      }
 	
+	public void navigateURL(String url){
+		 dr.navigate().to(url);
+		 Reporter.log("Going to navigate URL in browsers.....");
+	}
+	
 	public WebElement getEelemet(String loc){
 		WebElement w=null;
         if(loc.endsWith("_id")){
