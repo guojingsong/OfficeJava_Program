@@ -6,15 +6,12 @@ import java.util.Set;
 public class Remove_Duplicate_Character {
 
 	public static void main(String[] args) {
-		String str = "manoj Kushwaha";
+		String str = "manoj Kushwaha Kushwaha";
 		System.out.println(removeDuplicateCharInString(str));
 		
 		for(int i=str.length()-1;i>=0;i--){
 		   System.out.print(str.charAt(i));
 		}
-		
-		
-		
 	}
 	
 	
