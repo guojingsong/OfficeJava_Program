@@ -6,6 +6,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class OpenBrowserTest extends Base_Class_sep {
 	
 	@Test(priority =1)
+<<<<<<< HEAD
 	public void TestStart_Facebook(){	   	
        openBrowser("chrome");
        System.out.println(pro.getProperty("appurl"));
@@ -14,11 +15,15 @@ public class OpenBrowserTest extends Base_Class_sep {
 	
 	@Test(priority =2)
 	public void navigateURL(){
+=======
+	public void TestStart_Facebook(){
+		openBrowser("chrome");
+>>>>>>> branch 'master' of https://github.com/manojk2829/OfficeJava_Program.git
     	dr.navigate().to(pro.getProperty("appurl"));
     	test.log(LogStatus.INFO, " URL is getting opened successfully... " + pro.getProperty("appurl"));
 	}
 
-	@Test(priority =3)
+	@Test(priority =2)
 	public void RegisterFacebook(){
     	inputType("username_name", "FirstName");
     	inputType("userlast_name", "LastName");
