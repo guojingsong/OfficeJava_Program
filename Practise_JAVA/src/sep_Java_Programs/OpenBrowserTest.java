@@ -8,6 +8,8 @@ public class OpenBrowserTest extends Base_Class_sep {
 	@Test(priority =1)
 	public void TestStart_Facebook(){	   	
        openBrowser("chrome");
+       System.out.println(pro.getProperty("appurl"));
+       dr.navigate().to("http://facebook.com/");
 	}
 	
 	@Test(priority =2)

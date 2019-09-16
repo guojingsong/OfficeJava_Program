@@ -29,6 +29,7 @@ public class Base_Class_sep {
 	public ExtentTest test;
 
 	public Base_Class_sep(){
+		init();
 		init_config();
 	}
 	
@@ -42,7 +43,7 @@ public class Base_Class_sep {
 		}	
 	}
 
-	@BeforeClass
+	//@BeforeClass
 	public void init(){
 		test = ext.startTest("Test Started and Extent Report ready to Generate...");
 		pro=new Properties();
@@ -56,7 +57,8 @@ public class Base_Class_sep {
 	
 	public void openBrowser(String broName){
 		if(broName.equalsIgnoreCase("chrome")){
-		   System.setProperty("webdriver.chrome.driver", pro.getProperty("Chrome_Browser_exe"));
+		   //System.setProperty("webdriver.chrome.driver", pro.getProperty("Chrome_Browser_exe"));
+		   System.setProperty("webdriver.chrome.logfile", pro.getProperty("Chrome_Browser_logPath"));
 		   ChromeOptions op=new ChromeOptions();
 		   op.addArguments("--start-maximized");
 		   op.addArguments("--disable-notifications");

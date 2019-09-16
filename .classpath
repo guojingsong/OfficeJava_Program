@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Practise_JAVA/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/curvesapi-1.03.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/dom4j-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/extentreports-java-2.41.1.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/poi-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/poi-examples-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/poi-excelant-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/poi-ooxml-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/poi-ooxml-schemas-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/poi-scratchpad-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/snakeyaml-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/New All Selenium Jar/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Manoj_Data/selenium-server-standalone-3.141.59.jar" sourcepath="/Selenium_Practise/src/selenium_Practise_pack"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
