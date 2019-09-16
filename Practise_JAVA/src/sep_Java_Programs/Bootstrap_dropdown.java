@@ -1,10 +1,6 @@
 package sep_Java_Programs;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class Bootstrap_dropdown extends Base_Class_sep{
@@ -14,8 +10,7 @@ public class Bootstrap_dropdown extends Base_Class_sep{
 		openBrowser("chrome");
 		//navigateURL("https://seleniumpractise.blogspot.com/2016/08/bootstrap-dropdown-example-for-selenium.html");
 		navigateURL("https://seleniumautomationpractice.blogspot.com/");
-		wait(1);
-		
+		wait(1);	
 		
 		System.out.println(dr.getTitle());
 		dr.findElement(By.name("firstname")).sendKeys("Manoj Kushwaha");
